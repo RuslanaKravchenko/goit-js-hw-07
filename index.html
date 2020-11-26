@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>goit-js-hw-07</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!--================== task-1 =================-->
+
+    <ul id="categories" class="list task">
+      <li class="item">
+        <h2>Животные</h2>
+
+        <ul class="list">
+          <li>Кот</li>
+          <li>Хомяк</li>
+          <li>Лошадь</li>
+          <li>Попугай</li>
+        </ul>
+      </li>
+      <li class="item">
+        <h2>Продукты</h2>
+
+        <ul class="list">
+          <li>Хлеб</li>
+          <li>Петрушка</li>
+          <li>Творог</li>
+        </ul>
+      </li>
+      <li class="item">
+        <h2>Технологии</h2>
+
+        <ul class="list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!--================== task-2 =================-->
+
+    <ul id="ingredients" class="list task">
+      <h2>Ингредиенты</h2>
+    </ul>
+
+    <!--================== task-3 =================-->
+
+    <div class="task"><ul id="gallery" class="list gallery"></ul></div>
+
+    <!--================== task-4 =================-->
+
+    <div id="counter" class="task">
+      <button type="button" data-action="decrement" class="counter__btn">
+        -1
+      </button>
+      <span id="value" class="counter__test">0</span>
+      <button type="button" data-action="increment" class="counter__btn">
+        +1
+      </button>
+    </div>
+
+    <!--================== task-5 =================-->
+
+    <div class="task">
+      <input
+        type="text"
+        placeholder="Ваше имя?"
+        id="name-input"
+        class="input"
+      />
+      <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
+    </div>
+
+    <!--================== task-6 =================-->
+
+    <div class="task">
+      <input
+        type="text"
+        id="validation-input"
+        data-length="6"
+        placeholder="Введи 6 символов"
+        class="input"
+      />
+    </div>
+
+    <!--================== task-7 =================-->
+    <div class="task">
+      <input id="font-size-control" type="range" class="range" />
+      <br />
+      <span id="text">Абракадабра!</span>
+    </div>
+
+    <script type="module" src="./js/task-1.js"></script>
+    <script type="module" src="./js/task-2.js"></script>
+    <script type="module" src="./js/task-3.js"></script>
+    <script type="module" src="./js/task-4.js"></script>
+    <script type="module" src="./js/task-5.js"></script>
+    <script type="module" src="./js/task-6.js"></script>
+    <script type="module" src="./js/task-7.js"></script>
+  </body>
+</html>
