@@ -8,18 +8,13 @@ const ingredients = [
 ];
 
 const ingredientsRef = document.querySelector('#ingredients');
+const fragment = document.createDocumentFragment();
 
 const ingredientArr = ingredients.map(ingredient => {
   const ingredientRef = document.createElement('li');
   ingredientRef.textContent = ingredient;
-
-  return ingredientRef;
+  fragment.append(ingredientRef);
+  return fragment;
 });
 
-// ingredientsRef.append(...ingredientArr);
-
-// ============ Вариант 2 ===========
-
-const fragment = document.createDocumentFragment();
-fragment.append(...ingredientArr);
 ingredientsRef.append(fragment);

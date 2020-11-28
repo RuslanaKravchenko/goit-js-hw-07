@@ -19,31 +19,31 @@ const images = [
 const galleryRef = document.querySelector('#gallery');
 
 // ============ Вариант 1 ===========
-// images.forEach(item => {
-//   galleryRef.insertAdjacentHTML(
-//     'beforeend',
-//     `<li><img src=${item.url} alt=${item.alt}></li>`,
-//   );
-// });
+images.forEach(item => {
+  galleryRef.insertAdjacentHTML(
+    'beforeend',
+    `<li><img src=${item.url} alt=${item.alt}></li>`,
+  );
+});
 
 // ============ Вариант 2 ===========
 
-const createNewItem = elem => {
-  const li = document.createElement('li');
-  li.classList.add('list__item');
+// const createNewItem = elem => {
+//   const li = document.createElement('li');
+//   li.classList.add('list__item');
 
-  const img = document.createElement('img');
-  img.setAttribute('src', `${elem.url}`);
-  img.setAttribute('alt', `${elem.alt}`);
+//   const img = document.createElement('img');
+//   img.setAttribute('src', `${elem.url}`);
+//   img.setAttribute('alt', `${elem.alt}`);
 
-  li.append(img);
+//   li.append(img);
 
-  return li;
-};
+//   return li;
+// };
 
-const itemArr = images.map(item => createNewItem(item));
+// const itemArr = images.map(item => createNewItem(item));
 
-const fragment = document.createDocumentFragment();
-fragment.append(...itemArr);
+// const fragment = document.createDocumentFragment();
+// fragment.append(...itemArr);
 
-galleryRef.append(fragment);
+// galleryRef.append(fragment);

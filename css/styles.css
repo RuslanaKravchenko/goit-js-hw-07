@@ -66,3 +66,15 @@ img {
 #validation-input.invalid {
   border-color: #f44336;
 }
+
+.boxes {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.box {
+  margin: 5px;
+  border-radius: 50%;
+}
